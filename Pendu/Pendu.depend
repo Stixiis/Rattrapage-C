@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1634144895 source:c:\users\elie\documents\github\rattrapage-c\pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<string.h>
+	"dico.h"
+
+1634145047 c:\users\elie\documents\github\rattrapage-c\pendu\dico.h
+	<stdio.h>
+
