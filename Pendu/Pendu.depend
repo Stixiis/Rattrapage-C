@@ -10,3 +10,11 @@
 1634145047 c:\users\elie\documents\github\rattrapage-c\pendu\dico.h
 	<stdio.h>
 
+1634145519 source:c:\users\elie\documents\github\rattrapage-c\pendu\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"dico.h"
+

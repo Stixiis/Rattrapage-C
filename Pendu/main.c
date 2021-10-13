@@ -56,9 +56,9 @@ int main(int argc, const char * argv[]) {
     }
 
     if (win(findLetter)) {
-        printf("\n\nGagne ! Le mot secret etait bien : %s", secretWord);
+        printf("\n Felicitation tu as trouve le mot  : %s", secretWord);
     } else {
-        printf("\n\nPerdu ! Le mot secret etait : %s", secretWord);
+        printf("\n Malheureusement tu as perdu! Le mot secret etait : %s", secretWord);
     }
 
     free(findLetter);
