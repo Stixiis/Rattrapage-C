@@ -8,6 +8,13 @@
 #define RATIO                   (HAUTEUR_FENETRE / 255.0)
 #define DELAI_RAFRAICHISSEMENT  25 /* Temps en ms entre chaque mise à jour du graphe. 25 ms est la valeur minimale. */
 
+    /* |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+       |                    Developpé par :                           |
+       |                    Elie Ryckelynck                           |
+       |                        ESI 1                                 |
+       |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+    */
+
 void setPixel(SDL_Surface *surface, int x, int y, Uint32 pixel);
 
 
@@ -18,12 +25,6 @@ int main(int argc, char *argv[])
     SDL_Rect position;
     int continuer = 1, hauteurBarre = 0, tempsActuel = 0, tempsPrecedent = 0, i = 0, j = 0;
     float *spectre = NULL;
-
-    /* Initialisation de FMOD
-       ----------------------
-
-    On charge FMOD, la musique, on active le module DSP et on lance la lecture
-    de la musique */
 
     FSOUND_Init(44100, 4, 0);
     FSOUND_STREAM* musique = FSOUND_Stream_Open("Hype_Home.mp3", 0, 0, 0);
@@ -66,12 +67,6 @@ int main(int argc, char *argv[])
         SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran->format, 0, 0, 0));
 
 
-        /* Gestion du temps
-           -----------------
-        On compare le temps actuel par rapport au temps précédent (dernier passage dans la boucle)
-        Si ça fait moins de 25 ms (DELAI_RAFRAISSEMENT), alors on attend le
-        temps qu'il faut pour qu'au moins 25 ms se soit écoulées. On met ensuite à
-        jour tempsPrecedent avec le nouveau temps */
 
         tempsActuel = SDL_GetTicks();
         if (tempsActuel - tempsPrecedent < DELAI_RAFRAICHISSEMENT)
@@ -80,19 +75,6 @@ int main(int argc, char *argv[])
         }
         tempsPrecedent = SDL_GetTicks();
 
-
-
-        /* Dessin du spectre sonore
-           ------------------------
-
-        C'est la partie la plus intéressante. Il faut réfléchir un peu à la façon
-        de dessiner pour y arriver, mais c'est tout à fait faisable (la preuve ^^ )
-
-        On récupère le pointeur vers le tableau de 512 floats via FSOUND_DSP_GetSpectrum()
-        On travaille ensuite pixel par pixel sur la surface ecran pour dessiner les barres.
-        On fait une première boucle pour parcourir la fenêtre en largeur.
-        La seconde boucle parcourt la fenêtre en hauteur pour chaque barre.
-        */
 
         spectre = FSOUND_DSP_GetSpectrum(); /* On récupère le pointeur vers le tableau de 512 floats */
 

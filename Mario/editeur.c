@@ -1,11 +1,10 @@
-/*
-editeur.c
----------
+    /* |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+       |                    Developpé par :                           |
+       |                    Elie Ryckelynck                           |
+       |                        ESI 1                                 |
+       |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+    */
 
-Par mateo21, pour Le Site du Zér0 (www.siteduzero.com)
-
-Rôle : gestion de l'éditeur de niveaux.
-*/
 
 #include <stdlib.h>
 #include <stdio.h>

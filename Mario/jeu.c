@@ -1,11 +1,10 @@
-/*
-jeu.c
------
+    /* |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+       |                    Developpé par :                           |
+       |                    Elie Ryckelynck                           |
+       |                        ESI 1                                 |
+       |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+    */
 
-Par mateo21, pour Le Site du Zér0 (www.siteduzero.com)
-
-Rôle : fonctions du jeu.
-*/
 
 #include <stdlib.h>
 #include <stdio.h>

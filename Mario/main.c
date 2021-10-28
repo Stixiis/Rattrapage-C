@@ -1,12 +1,9 @@
-/*
-main.c
-------
-
-Par mateo21, pour Le Site du Zér0 (www.siteduzero.com)
-
-Rôle : menu du jeu. Permet de choisir entre l'éditeur et le jeu lui-même.
-*/
-
+    /* |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+       |                    Developpé par :                           |
+       |                    Elie Ryckelynck                           |
+       |                        ESI 1                                 |
+       |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+    */
 #include <stdlib.h>
 #include <stdio.h>
 #include <SDL/SDL.h>

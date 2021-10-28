@@ -1,11 +1,10 @@
-/*
-fichiers.c
-----------
+    /* |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+       |                    Developpé par :                           |
+       |                    Elie Ryckelynck                           |
+       |                        ESI 1                                 |
+       |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+    */
 
-Par mateo21, pour Le Site du Zér0 (www.siteduzero.com)
-
-Rôle : fonctions de lecture / écriture de fichiers de niveau.
-*/
 
 #include <stdlib.h>
 #include <stdio.h>
