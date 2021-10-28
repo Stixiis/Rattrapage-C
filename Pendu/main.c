@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 #include "dico.h"
-
+//developpé par Elie Ryckelynck ESi
 char readChar(void);
 int win(int findLetter[]);
 int searchLetter(char letter, char secretWord[], int findLetter[]);
@@ -18,7 +18,8 @@ int main(int argc, const char * argv[]) {
     long wordSize = 0;
 
     printf("Bienvenue dans le Pendu !\n\n");
-
+    
+    printf("Vous devez trouvé Le mot secret\n\n");
     if (!takeWord(secretWord)) {
         exit(0);
     }

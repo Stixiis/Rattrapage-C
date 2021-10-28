@@ -3,7 +3,6 @@
 #include <time.h>
 #include <string.h>
 #include <ctype.h>
-
 #include "dico.h"
 
 int takeWord(char *takenWord)
@@ -11,6 +10,7 @@ int takeWord(char *takenWord)
     FILE* dico = NULL;
     int numberWords = 0, numberWordChose = 0, i = 0;
     int readChar = 0;
+    //ligne à changer ver le dictionnaire 
     dico = fopen("C:/Users/Elie/Documents/GitHub/Rattrapage-C/Pendu/dico.txt", "r");
 
     if (dico == NULL)
